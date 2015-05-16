@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows;
-using System.Windows.Input;
-using Caliburn.Micro;
+﻿using Caliburn.Micro;
 using LogoFX.Practices.IoC;
 using LogoFX.UI.Navigation;
 using LogoUI.Samples.Client.Gui.Shell.Compliance.ViewModels;
@@ -28,29 +25,8 @@ namespace LogoUI.Samples.Client.Gui.Shell.ViewModels
         protected override void OnViewLoaded(object view)
         {
             base.OnViewLoaded(view);
-            var commandBindings = new[] {CreateBrowseBackCommandBinding(), CreateBrowseForwardCommandBinding()};
-
-            foreach (var commandBinding in commandBindings)
-            {
-                CommandManager.RegisterClassCommandBinding(typeof(MainViewModel),commandBinding);
-                ((UIElement)view).CommandBindings.Add(commandBinding);
-            }                        
-            GC.Collect();
-        }        
-
-        private CommandBinding CreateBrowseBackCommandBinding()
-        {
-            return new CommandBinding(NavigationCommands.BrowseBack,
-                (sender, args) => _navigationService.Back(),
-                (sender, args) => args.CanExecute = _navigationService.CanNavigateBack);
-        }
-
-        private CommandBinding CreateBrowseForwardCommandBinding()
-        {
-            return new CommandBinding(NavigationCommands.BrowseForward,
-                (sender, args) => _navigationService.Forward(),
-                (sender, args) => args.CanExecute = _navigationService.CanNavigateForward);            
-        }
+            NavigationHelper.RegisterNavigationCommands(typeof(MainViewModel),view, _navigationService);
+        }                
 
         void INavigationConductor.NavigateTo(object viewModel, object argument)
         {
