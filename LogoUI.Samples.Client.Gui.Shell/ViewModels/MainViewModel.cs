@@ -4,6 +4,7 @@ using System.Windows.Input;
 using Caliburn.Micro;
 using LogoFX.Practices.IoC;
 using LogoFX.UI.Navigation;
+using LogoUI.Samples.Client.Gui.Shell.Compliance.ViewModels;
 
 namespace LogoUI.Samples.Client.Gui.Shell.ViewModels
 {    
@@ -12,13 +13,17 @@ namespace LogoUI.Samples.Client.Gui.Shell.ViewModels
     [NavigationSynonym(typeof(IMainViewModel))]
     public sealed class MainViewModel : Conductor<IScreen>, INavigationViewModel, IMainViewModel
     {
+        public ComplianceRootViewModel ComplianceRootViewModel { get; set; }
         private readonly INavigationService _navigationService;
 
         public MainViewModel(
-            INavigationService navigationService)
+            INavigationService navigationService,
+            ComplianceRootViewModel complianceRootViewModel)
         {
-            _navigationService = navigationService;                                   
-        }        
+            ComplianceRootViewModel = complianceRootViewModel;
+            _navigationService = navigationService;
+        }
+
 
         protected override void OnViewLoaded(object view)
         {
@@ -59,7 +64,7 @@ namespace LogoUI.Samples.Client.Gui.Shell.ViewModels
 
         public void OnNavigated(NavigationDirection direction, object argument)
         {
-            
+            ActivateItemImpl(ComplianceRootViewModel);
         }
     }
 }

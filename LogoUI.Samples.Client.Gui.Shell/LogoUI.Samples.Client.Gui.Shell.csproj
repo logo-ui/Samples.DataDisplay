@@ -84,6 +84,10 @@
     <Reference Include="LogoFX.UI.Commanding">
       <HintPath>..\Lib\LogoFX\LogoFX.UI.Commanding.dll</HintPath>
     </Reference>
+    <Reference Include="LogoFX.UI.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\LogoFX\LogoFX.UI.Core.dll</HintPath>
+    </Reference>
     <Reference Include="LogoFX.UI.Model.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Lib\LogoFX\LogoFX.UI.Model.Contracts.dll</HintPath>
@@ -93,6 +97,12 @@
     </Reference>
     <Reference Include="LogoFX.UI.Navigation">
       <HintPath>..\Lib\LogoFX\LogoFX.UI.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoFX.UI.ViewModels">
+      <HintPath>..\Lib\LogoFX\LogoFX.UI.ViewModels.dll</HintPath>
+    </Reference>
+    <Reference Include="LogoFX.UI.ViewModels.Interfaces">
+      <HintPath>..\Lib\LogoFX\LogoFX.UI.ViewModels.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="LogoFX.UI.Views.Infra">
       <HintPath>..\Lib\LogoFX\LogoFX.UI.Views.Infra.dll</HintPath>
@@ -145,6 +155,16 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Behaviors\WindowConstraintsBehavior.cs" />
+    <Compile Include="Compliance\ViewModels\ComplianceListViewModel.cs" />
+    <Compile Include="Compliance\ViewModels\ComplianceRecordsFiltersViewModel.cs" />
+    <Compile Include="Compliance\ViewModels\ComplianceRecordsFilterViewModel.cs" />
+    <Compile Include="Compliance\ViewModels\ComplianceRecordViewModel.cs" />
+    <Compile Include="Compliance\ViewModels\ComplianceRootViewModel.cs" />
+    <Compile Include="Compliance\ViewModels\ConsoleToolbarViewModel.cs" />
+    <Compile Include="Compliance\ViewModels\ConsoleViewModel.cs" />
+    <Compile Include="Compliance\Models\ComplianceDateFiltering.cs" />
+    <Compile Include="Compliance\Models\ComplianceRecordsFilter.cs" />
+    <Compile Include="Controls\SmartPanel.cs" />
     <Compile Include="UiServices\IShellCloseService.cs" />
     <Compile Include="ViewModels\ChildWindowViewModel.cs" />
     <Compile Include="ViewModels\IMainViewModel.cs" />
@@ -173,6 +193,34 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Compliance\Views\ComplianceList\Cards.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Compliance\Views\ComplianceList\Grid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Compliance\Views\ComplianceRecordsFiltersView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Compliance\Views\ComplianceRecordsFilterView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Compliance\Views\ComplianceRecordView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Compliance\Views\ComplianceRootView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Compliance\Views\ConsoleView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ChildWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -204,6 +252,7 @@
       <Name>LogoUI.Samples.Client.Model.Shared</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

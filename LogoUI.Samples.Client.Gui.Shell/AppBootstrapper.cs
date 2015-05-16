@@ -17,6 +17,7 @@ namespace LogoUI.Samples.Client.Gui.Shell
             container.RegisterSingleton<IShellCloseService, ShellViewModel>();
             container.RegisterSingleton<IWindowManager, ShellViewModel>("LikeRT"); 
             container.RegisterSingleton<ILoginService, FakeLoginService>();
+            container.RegisterSingleton<IDataService, FakeDataService>();
         }	    
 	}
 }
