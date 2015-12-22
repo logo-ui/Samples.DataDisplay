@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using LogoFX.UI.Core;
+using LogoFX.Client.Core;
 using LogoUI.Samples.Client.Model.Contracts;
 using LogoUI.Samples.Client.Model.Contracts.Compliance;
 using LogoUI.Samples.Client.Model.Contracts.UserManagement;

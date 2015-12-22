@@ -5,9 +5,9 @@ using System.Linq;
 using System.Security.Principal;
 using System.Windows.Input;
 using Caliburn.Micro;
+using LogoFX.Client.Mvvm.Commanding;
+using LogoFX.Client.Mvvm.Navigation;
 using LogoFX.Practices.IoC;
-using LogoFX.UI.Commanding;
-using LogoFX.UI.Navigation;
 using LogoUI.Samples.Client.Gui.Shell.UiServices;
 using LogoUI.Samples.Client.Model.Contracts;
 

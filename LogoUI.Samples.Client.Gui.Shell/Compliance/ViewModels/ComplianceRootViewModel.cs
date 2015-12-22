@@ -1,6 +1,6 @@
 ﻿using Caliburn.Micro;
+using LogoFX.Client.Mvvm.Navigation;
 using LogoFX.Practices.IoC;
-using LogoFX.UI.Navigation;
 using LogoUI.Samples.Client.Gui.Shell.ViewModels;
 
 namespace LogoUI.Samples.Client.Gui.Shell.Compliance.ViewModels

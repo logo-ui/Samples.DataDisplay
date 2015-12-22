@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Threading.Tasks;
 using Caliburn.Micro;
-using LogoFX.UI.ViewModels;
+using LogoFX.Client.Mvvm.ViewModel;
 using LogoUI.Samples.Client.Model.Contracts;
 using LogoUI.Samples.Client.Model.Contracts.Compliance;
 

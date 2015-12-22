@@ -1,4 +1,4 @@
-﻿using LogoFX.UI.Model.Contracts;
+﻿using LogoFX.Client.Mvvm.Model.Contracts;
 
 namespace LogoUI.Samples.Client.Model.Contracts.UserManagement
 {

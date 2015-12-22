@@ -1,7 +1,7 @@
 ﻿<Application x:Class="LogoUI.Samples.Client.Gui.Shell.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:xaml="clr-namespace:LogoFX.UI.Views.Infra.Xaml;assembly=LogoFX.UI.Views.Infra"
+             xmlns:xaml="clr-namespace:LogoFX.Client.Mvvm.View.Infra.Xaml;assembly=LogoFX.Client.Mvvm.View.Infra"
              xmlns:shell="clr-namespace:LogoUI.Samples.Client.Gui.Shell">
     <Application.Resources>
         <xaml:SharedResourceDictionary>

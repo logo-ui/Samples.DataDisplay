@@ -55,83 +55,124 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Caliburn.Micro, Version=2.0.2.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Caliburn.Micro.Core.2.0.2\lib\net45\Caliburn.Micro.dll</HintPath>
+    <Reference Include="Caliburn.Micro">
+      <HintPath>..\packages\Caliburn.Micro.Core.2.0.2\lib\portable-net45+win8+wp8+wpa81\Caliburn.Micro.dll</HintPath>
     </Reference>
-    <Reference Include="Caliburn.Micro.Platform, Version=2.0.2.0, Culture=neutral, PublicKeyToken=8e5891231f2ed21f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Caliburn.Micro.Platform">
       <HintPath>..\packages\Caliburn.Micro.2.0.2\lib\net45\Caliburn.Micro.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="CodeContracts">
-      <HintPath>..\Lib\CodeContracts.dll</HintPath>
+    <Reference Include="JetBrains.Annotations, Version=10.0.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
+      <HintPath>..\packages\JetBrains.Annotations.10.0.0\lib\net20\JetBrains.Annotations.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.Core">
-      <HintPath>..\Lib\LogoFX\LogoFX.Core.dll</HintPath>
+    <Reference Include="LogoFX.Client.Bootstrapping, Version=1.0.3.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Bootstrapping.1.0.3.4\lib\net451\LogoFX.Client.Bootstrapping.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.Practices.IoC">
-      <HintPath>..\Lib\LogoFX\LogoFX.Practices.IoC.dll</HintPath>
+    <Reference Include="LogoFX.Client.Bootstrapping.Adapters.SimpleContainer, Version=1.0.3.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.1.0.3.3\lib\net451\LogoFX.Client.Bootstrapping.Adapters.SimpleContainer.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Bootstraping.Contracts">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Bootstraping.Contracts.dll</HintPath>
+    <Reference Include="LogoFX.Client.Bootstrapping.Contracts, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Bootstrapping.Contracts.1.0.3\lib\net451\LogoFX.Client.Bootstrapping.Contracts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Bootstrapping">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Bootstrapping.dll</HintPath>
+    <Reference Include="LogoFX.Client.Core, Version=1.0.3.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Core.1.0.3.1\lib\net451\LogoFX.Client.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Bootstrapping.SimpleContainer">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Bootstrapping.SimpleContainer.dll</HintPath>
+    <Reference Include="LogoFX.Client.Modularity, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Modularity.1.0.3.1\lib\net451\LogoFX.Client.Modularity.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Commanding">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Commanding.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Commanding, Version=1.0.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Commanding.1.0.3.1\lib\net451\LogoFX.Client.Mvvm.Commanding.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Core.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Core, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Core.1.0.3\lib\net451\LogoFX.Client.Mvvm.Core.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Model.Contracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Model.Contracts.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Model, Version=1.0.5.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Model.1.0.5.5\lib\net451\LogoFX.Client.Mvvm.Model.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Modularity">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Modularity.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Model.Contracts, Version=1.0.5.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Model.1.0.5.5\lib\net451\LogoFX.Client.Mvvm.Model.Contracts.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Navigation">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Navigation.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.Navigation, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.Navigation.1.0.4\lib\net451\LogoFX.Client.Mvvm.Navigation.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.ViewModels">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.ViewModels.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.View.Extensions, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.View.Extensions.1.0.4\lib\net451\LogoFX.Client.Mvvm.View.Extensions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.ViewModels.Interfaces">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.ViewModels.Interfaces.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.View.Infra, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.View.1.0.3.1\lib\net451\LogoFX.Client.Mvvm.View.Infra.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="LogoFX.UI.Views.Infra">
-      <HintPath>..\Lib\LogoFX\LogoFX.UI.Views.Infra.dll</HintPath>
+    <Reference Include="LogoFX.Client.Mvvm.ViewModel, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.ViewModel.1.0.3.2\lib\net451\LogoFX.Client.Mvvm.ViewModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LogoFX.Client.Mvvm.ViewModel.Extensions, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.ViewModel.Extensions.1.0.4\lib\net451\LogoFX.Client.Mvvm.ViewModel.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LogoFX.Client.Mvvm.ViewModel.Interfaces, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.ViewModel.1.0.3.2\lib\net451\LogoFX.Client.Mvvm.ViewModel.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LogoFX.Core, Version=1.0.3.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Core.1.0.3.4\lib\net451\LogoFX.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="LogoFX.Practices.IoC, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Practices.IoC.1.0.3.1\lib\net451\LogoFX.Practices.IoC.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="MahApps.Metro">
       <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\MahApps.Metro.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="Solid.Practices.Composition">
-      <HintPath>..\Lib\Solid\Solid.Practices.Composition.dll</HintPath>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\LogoFX.Client.Mvvm.View.1.0.3.1\lib\net451\Microsoft.Expression.Interactions.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Solid.Practices.Composition.Desktop">
-      <HintPath>..\Lib\Solid\Solid.Practices.Composition.Desktop.dll</HintPath>
+    <Reference Include="Solid.Patterns.Memento, Version=1.0.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Patterns.Memento.1.0.3.1\lib\net451\Solid.Patterns.Memento.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Solid.Practices.IoC">
-      <HintPath>..\Lib\Solid\Solid.Practices.IoC.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.Composition.1.0.5\lib\net451\Solid.Practices.Composition.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Solid.Practices.Modularity">
-      <HintPath>..\Lib\Solid\Solid.Practices.Modularity.dll</HintPath>
+    <Reference Include="Solid.Practices.Composition.Desktop, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.Composition.Desktop.1.0.5\lib\net451\Solid.Practices.Composition.Desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Solid.Practices.IoC, Version=1.0.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.IoC.1.0.4.2\lib\net451\Solid.Practices.IoC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Solid.Practices.Middleware, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.Middleware.1.0.3\lib\net451\Solid.Practices.Middleware.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Solid.Practices.Modularity, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Solid.Practices.Modularity.1.0.5\lib\net451\Solid.Practices.Modularity.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Reactive.Core">
-      <HintPath>..\packages\Rx-Core.2.2.5\lib\net45\System.Reactive.Core.dll</HintPath>
+      <HintPath>..\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Interfaces">
-      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\net45\System.Reactive.Interfaces.dll</HintPath>
+      <HintPath>..\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="System.Reactive.Linq">
-      <HintPath>..\packages\Rx-Linq.2.2.5\lib\net45\System.Reactive.Linq.dll</HintPath>
+      <HintPath>..\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MahApps.Metro.1.1.2.0\lib\net45\System.Windows.Interactivity.dll</HintPath>

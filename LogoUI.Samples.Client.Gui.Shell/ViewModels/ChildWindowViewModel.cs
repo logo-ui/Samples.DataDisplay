@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Windows.Input;
 using Caliburn.Micro;
-using LogoFX.UI.Commanding;
+using LogoFX.Client.Mvvm.Commanding;
 
 namespace LogoUI.Samples.Client.Gui.Shell.ViewModels
 {    

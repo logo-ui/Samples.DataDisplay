@@ -1,4 +1,4 @@
-﻿using LogoFX.UI.Navigation;
+﻿using LogoFX.Client.Mvvm.Navigation;
 
 namespace LogoUI.Samples.Client.Gui.Shell.ViewModels
 {

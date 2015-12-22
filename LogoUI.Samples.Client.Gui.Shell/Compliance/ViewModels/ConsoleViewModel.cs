@@ -1,6 +1,6 @@
 ﻿using Caliburn.Micro;
-using LogoFX.UI.ViewModels;
-using LogoFX.UI.ViewModels.Interfaces;
+using LogoFX.Client.Mvvm.ViewModel;
+using LogoFX.Client.Mvvm.ViewModel.Interfaces;
 
 namespace LogoUI.Samples.Client.Gui.Shell.Compliance.ViewModels
 {
